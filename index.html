@@ -13,25 +13,26 @@
   <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.8.6/dist/aframe-extras.min.js"></script>
   <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
   <script src="https://unpkg.com/super-hands@3.0.0/dist/super-hands.min.js"></script>
-  <script src="https://cdn.glitch.com/fc59a62e-8656-457f-8170-ac57c3fc900c%2Fprogressive-controls.js?v=1589121812737"></script>
+  <script
+    src="https://cdn.glitch.com/fc59a62e-8656-457f-8170-ac57c3fc900c%2Fprogressive-controls.js?v=1589121812737"></script>
   <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
   <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
   <script>
-		AFRAME.registerComponent('play', {
-			init: function () {
-				var myEl = document.querySelector('#soundbox');
-				this.el.addEventListener('click', function () {
-					myEl.components.sound.playSound();
-				});
-			}
-		});
-		AFRAME.registerComponent('stop', {
-			init: function () {
-				var myEl = document.querySelector('#soundbox');
-				this.el.addEventListener('click', function () {
-					myEl.components.sound.stopSound();
-				});
-			}
+    AFRAME.registerComponent('play', {
+      init: function () {
+        var myEl = document.querySelector('#soundbox');
+        this.el.addEventListener('click', function () {
+          myEl.components.sound.playSound();
+        });
+      }
+    });
+    AFRAME.registerComponent('stop', {
+      init: function () {
+        var myEl = document.querySelector('#soundbox');
+        this.el.addEventListener('click', function () {
+          myEl.components.sound.stopSound();
+        });
+      }
     });
 
 		// AFRAME.registerComponent('on', {
@@ -74,7 +75,7 @@
       <audio id="wind" src="audio/abba01.mp3"></audio>
       <!-- global -->
       <img id="floor" src="img/other/floor.jpg" />
-      <img id="wall" src="img/other/wall-concrete.jpg" />
+      <img id="wall" src="img/other/bush.png" />
       <img id="wall-secret" src="img/other/wall-concrete-secret.jpg" />
       <img id="wall-brick" src="img/other/brick.jpg" />
       <img id="room-sign-1" src="img/other/room-sign-1.png" />
@@ -276,10 +277,23 @@
         <a-image position="0 5.1 -4.2" rotation="15 0 0" src="#room4-sign-photos" height="2.5" width="5"></a-image>
       </a-entity>
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <a-box id="soundbox" color="tomato" depth="1" height="1" width="5" position=" 0 0 -1" sound="src: #wind">
+        <a-sphere color="#00AA00" radius="0.25" position="1 0.5 0" play></a-sphere>
+        <a-sphere color="#AA0000" radius="0.25" position="-1 0.5 0" stop></a-sphere>
+=======
+        <a-box id="soundbox" color="tomato" depth="1" height="1" width="5"
+             position="0 0 -2" sound="src: #wind">
+          <a-sphere color="#00AA00" radius="0.25" position="1 0.5 0" play></a-sphere>
+          <a-sphere color="#AA0000" radius="0.25" position="-1 0.5 0" stop></a-sphere>
+>>>>>>> 289baf41fa49a6e58e35bc4c769a7b92e61f0fa0
+=======
         <a-box id="soundbox" color="white" depth="1" height="1" width="5"
              position="0 -1 -2" sound="src: #wind">
           <a-sphere color="#00AA00" radius="0.5" position="1 0.5 0" play></a-sphere>
           <a-sphere color="#AA0000" radius="0.5" position="-1 0.5 0" stop></a-sphere>
+>>>>>>> 0e2d1b519415de926998afcaf92b7f05b37fd114
       </a-box>
 
       <!-- Basic cylinder on: click; -->
@@ -316,13 +330,11 @@
       <a-entity rotation="0 -90 0">
         <a-image position="-2 1.3 -4.4" src="#room5-rust" height="5" width="2.5"></a-image>
         <a-image position="2 1.3 -4.4" src="#room5-speech" height="5" width="2.5"></a-image>
-        <a-image position="0 5.1 -4.2" rotation="15 0 0" src="#room5-sign-side" height="2.5" width="5"></a-image>
       </a-entity>
       <!--left wall -->
       <a-entity rotation="0 90 0">
         <a-image position="-2 1.3 -4.4" src="#room5-vr" height="5" width="2.5"></a-image>
         <a-image position="2 1.3 -4.4" src="#room5-wa" height="5" width="2.5"></a-image>
-        <a-image position="0 5.1 -4.2" rotation="15 0 0" src="#room5-sign-side" height="2.5" width="5"></a-image>
       </a-entity>
     </a-entity>
 
