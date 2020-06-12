@@ -1,0 +1,242 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 11.05.2020 16:36:57
+
+newmtl T_WoodBeams_Diffuse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_WoodBeams_Diffuse.png
+	map_Kd T_WoodBeams_Diffuse.png
+	map_bump T_WoodBeams_Normal.png
+	bump T_WoodBeams_Normal.png
+
+newmtl T_PaintedWood01_Red_Oars_Diffuse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_PaintedWood01_Red_Oars_Diffuse.png
+	map_Kd T_PaintedWood01_Red_Oars_Diffuse.png
+	map_bump T_PaintedWood01_Red_Oars_Normal.png
+	bump T_PaintedWood01_Red_Oars_Normal.png
+
+newmtl T_WoodStatues_Diffuse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_WoodStatues_Diffuse.png
+	map_Kd T_WoodStatues_Diffuse.png
+	map_bump T_WoodStatues_Normal.png
+	bump T_WoodStatues_Normal.png
+
+newmtl T_WoodPlank_Floor3_Diffuse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_WoodPlank_Floor3_Diffuse.png
+	map_Kd T_WoodPlank_Floor3_Diffuse.png
+	map_bump T_WoodPlank_Floor3_Normal.png
+	bump T_WoodPlank_Floor3_Normal.png
+
+newmtl T_PaintedWood01_Black_Diffuse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_PaintedWood01_Black_Diffuse.png
+	map_Kd T_PaintedWood01_Black_Diffuse.png
+	map_bump T_PaintedWood01_Black_Normal.png
+	bump T_PaintedWood01_Black_Normal.png
+
+newmtl T_Wood01_WBolts1_custom1_Diffuse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_Wood01_WBolts1_custom1_Diffuse.png
+	map_Kd T_Wood01_WBolts1_custom1_Diffuse.png
+	map_bump T_Wood01_WBolts1_custom1_Normal.png
+	bump T_Wood01_WBolts1_custom1_Normal.png
+
+newmtl T_MetalCannons_Diffuse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_MetalCannons_Diffuse.png
+	map_Kd T_MetalCannons_Diffuse.png
+	map_bump T_MetalCannons_Normal.png
+	bump T_MetalCannons_Normal.png
+
+newmtl T_WoodPlank_Floor2_Diffuse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_WoodPlank_Floor2_Diffuse.png
+	map_Kd T_WoodPlank_Floor2_Diffuse.png
+	map_bump T_WoodPlank_Floor2_Normal.png
+	bump T_WoodPlank_Floor2_Normal.png
+
+newmtl T_WoodBeams_Oar_Diffuse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_WoodBeams_Oar_Diffuse.png
+	map_Kd T_WoodBeams_Oar_Diffuse.png
+	map_bump T_WoodBeams_Oar_Normal.png
+	bump T_WoodBeams_Oar_Normal.png
+
+newmtl T_Wood09_custom_Diffuse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_Wood09_custom_Diffuse.png
+	map_Kd T_Wood09_custom_Diffuse.png
+	map_bump T_Wood09_custom_Normal.png
+	bump T_Wood09_custom_Normal.png
+
+newmtl T_Metal03_custom_Diffuse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_Metal03_custom_Diffuse.png
+	map_Kd T_Metal03_custom_Diffuse.png
+	map_bump T_Metal03_custom_Normal.png
+	bump T_Metal03_custom_Normal.png
+
+newmtl T_FabricSails_Diffuse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_FabricSails_Diffuse.png
+	map_Kd T_FabricSails_Diffuse.png
+	map_bump T_FabricSails_Normal.png
+	bump T_FabricSails_Normal.png
+
+newmtl T_Ropes_Diffuse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_Ropes_Diffuse.png
+	map_Kd T_Ropes_Diffuse.png
+	map_bump T_Ropes_Normal.png
+	bump T_Ropes_Normal.png
+
+newmtl T_Wood10_Diffuse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_Wood10_Diffuse.png
+	map_Kd T_Wood10_Diffuse.png
+	map_bump T_Wood10_Normal.png
+	bump T_Wood10_Normal.png
+
+newmtl T_MetalBase_custom4_Diffuse
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka T_MetalBase_custom4_Diffuse.png
+	map_Kd T_MetalBase_custom4_Diffuse.png
+	map_bump T_MetalBase_custom4_Normal.png
+	bump T_MetalBase_custom4_Normal.png
