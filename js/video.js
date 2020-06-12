@@ -4,6 +4,9 @@ video.pause();
 AFRAME.registerComponent('listener', {
   tick: function () {
     const userPosition = this.el.getAttribute('position')["z"];
+    // console.log("x", this.el.getAttribute("position")["x"]);
+    // console.log("y", this.el.getAttribute("position")["y"]);
+    // console.log("z", this.el.getAttribute("position")["z"]);
 
     if (userPosition <= -17) {
       video.play();
