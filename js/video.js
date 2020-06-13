@@ -1,14 +1,22 @@
-// play video when user enters room. Pause when leaving
+const cursor = document.getElementById("cursor");
+cursor.setAttribute("visible", false);
+
 const video = document.getElementById('theaterVideo');
 video.pause();
 AFRAME.registerComponent('listener', {
   tick: function () {
-    const userPosition = this.el.getAttribute('position')["z"];
-    // console.log("x", this.el.getAttribute("position")["x"]);
-    // console.log("y", this.el.getAttribute("position")["y"]);
-    // console.log("z", this.el.getAttribute("position")["z"]);
+    const userPositionZ = this.el.getAttribute('position')["z"];
+    const userPositionX = this.el.getAttribute('position')["x"];
+    // const userPositionY = this.el.getAttribute("position")["y"];
 
-    if (userPosition <= -17) {
+    // room 4 abba
+    if (userPositionX < -5 && userPositionZ > -8 && userPositionZ < -1) {
+      cursor.setAttribute("visible", true);
+    } else {
+      cursor.setAttribute("visible", false);
+    }
+    // room video
+    if (userPositionZ <= -17) {
       video.play();
     } else {
       video.pause();
