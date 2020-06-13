@@ -110,6 +110,9 @@
 
       <!-- Room 1 (Beer Room) -->
       <img id="room1-example" src="img/room1/beer.jpg" />
+      <a-asset-item id="beer-obj" src="img/room1/objBeer.obj"></a-asset-item>
+      <a-asset-item id="beer-mtl" src="img/room1/objBeer.mtl"></a-asset-item>
+      <img id="beerlabel" src="img/room1/beerlabel.jpg" />
 
       <!-- Room 2 (Big City Life) -->
       <img id="room2-stockholm1" src="img/room2/stockholm-1.png" />
@@ -205,6 +208,34 @@
       <a-entity rotation="0 90 0">
         <a-image position="-2 1.5 -4.4" src="#room1-example" height="5" width="2.5"></a-image>
         <a-image position="2 1.5 -4.4" src="#room1-example" height="5" width="2.5"></a-image>
+      </a-entity>
+      <!-- Beers -->
+      <a-entity position="-4 -1.4 -3" rotation="0 0 0">
+        <a-entity obj-model="obj: #beer-obj; mtl: #beer-mtl" rotation="0 0 0" scale="0.03 0.03 0.03"></a-entity>
+      </a-entity>
+
+      <a-entity position="-4 -1.4 0.5" rotation="0 0 0">
+        <a-entity obj-model="obj: #beer-obj; mtl: #beer-mtl" rotation="0 0 0" scale="0.03 0.03 0.03"></a-entity>
+      </a-entity>
+
+      <a-entity position="-4 -1.4 4" rotation="0 0 0">
+        <a-entity obj-model="obj: #beer-obj; mtl: #beer-mtl" rotation="0 0 0" scale="0.03 0.03 0.03"></a-entity>
+      </a-entity>
+
+      <a-entity position="3.5 -1.4 -3" rotation="0 0 0">
+        <a-entity obj-model="obj: #beer-obj; mtl: #beer-mtl" rotation="0 0 0" scale="0.03 0.03 0.03"></a-entity>
+      </a-entity>
+
+      <a-entity position="3.5 -1.4 0.5" rotation="0 0 0">
+        <a-entity obj-model="obj: #beer-obj; mtl: #beer-mtl" rotation="0 0 0" scale="0.03 0.03 0.03"></a-entity>
+      </a-entity>
+
+      <a-entity position="3.5 -1.4 4" rotation="0 0 0">
+        <a-entity obj-model="obj: #beer-obj; mtl: #beer-mtl" rotation="0 0 0" scale="0.03 0.03 0.03"></a-entity>
+      </a-entity>
+
+      <a-entity position="0 -1.4 -3" rotation="0 0 0">
+        <a-entity obj-model="obj: #beer-obj; mtl: #beer-mtl" rotation="0 0 0" scale="0.03 0.03 0.03"></a-entity>
       </a-entity>
     </a-entity>
 
