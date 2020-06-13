@@ -1,7 +1,7 @@
 {
   "name": "wcis-webvr",
   "description": "Study Trip to Stockholm",
-  "version": "1.0",
+  "version": "0.3.0",
   "license": "MIT",
   "scripts": {
     "start": "budo js/walls.js --live --verbose --port 3000 --open",
