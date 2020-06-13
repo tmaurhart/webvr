@@ -11,7 +11,8 @@
   <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.8.6/dist/aframe-extras.min.js"></script>
   <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
   <script src="https://unpkg.com/super-hands@3.0.0/dist/super-hands.min.js"></script>
-  <script src="https://cdn.glitch.com/fc59a62e-8656-457f-8170-ac57c3fc900c%2Fprogressive-controls.js?v=1589121812737"></script>
+  <script
+    src="https://cdn.glitch.com/fc59a62e-8656-457f-8170-ac57c3fc900c%2Fprogressive-controls.js?v=1589121812737"></script>
   <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
   <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
   <script src="js/components.js"></script>
@@ -67,7 +68,7 @@
       <!-- team -->
       <img id="hallway-stockholm" src="img/team/stockholm.png" />
       <img id="hallway-sascha" src="img/team/sascha.png" />
-      <img id="hallway-helene" src="img/team/helene.png" />
+      <img id="hallway-emanuel" src="img/team/emanuel.png" />
       <img id="hallway-tom" src="img/team/tom.png" />
       <img id="hallway-redboat" src="img/team/redboat.png" />
       <img id="hallway-ingrid" src="img/team/ingrid.png" />
@@ -119,7 +120,8 @@
 
       <!-- Room 6 (Vasa Boat) -->
       <video id="boatVideo" autoplay loop="true" webkit-playsinline playsinline
-        src="https://cdn.glitch.com/98ee4b2b-a63e-4667-a986-2a4e271af80e%2Fvasa.mp4?v=1591978898563" crossorigin="anonymous"></video>
+        src="https://cdn.glitch.com/98ee4b2b-a63e-4667-a986-2a4e271af80e%2Fvasa.mp4?v=1591978898563"
+        crossorigin="anonymous"></video>
       <img id="boatCurtains" src="img/boat/curtains.png" />
       <a-asset-item id="boat-obj" src="img/boat/VikingBoat.obj"></a-asset-item>
       <a-asset-item id="boat-mtl" src="img/boat/VikingBoat.mtl"></a-asset-item>
@@ -146,7 +148,7 @@
 
     <!-- hallway -->
     <!-- right wall -->
-    <a-image position="-.1 3 3" rotation="0 -90 0" src="#hallway-helene" height="3" width="3"></a-image>
+    <a-image position="-.1 3 3" rotation="0 -90 0" src="#hallway-emanuel" height="3" width="3"></a-image>
     <a-image position="-.1 3 12" rotation="0 -90 0" src="#hallway-sascha" height="3" width="3"></a-image>
     <a-image position="-.1 3 -9" rotation="0 -90 0" src="#hallway-redboat" height="3" width="3"></a-image>
     <!-- left wall -->
@@ -268,10 +270,13 @@
         <a-image position="2 1 -4.4" src="#room4-photo6" height="3" width="3"></a-image>
       </a-entity>
 
-      <a-box  color="#d4ac0f" depth="1" height="1" width="5" position="0 -1 -2" >
-        <a-sphere class="soundbox" color="#AA0000" radius="0.25" position="1.5 0.5 0" sound="src: #abba01" toggle-play></a-sphere>
-        <a-sphere class="soundbox" color="#AA0000" radius="0.25" position="0 0.5 0" sound="src: #abba02" toggle-play></a-sphere>
-        <a-sphere class="soundbox" color="#AA0000" radius="0.25" position="-1.5 0.5 0" sound="src: #abba03" toggle-play></a-sphere>
+      <a-box color="#d4ac0f" depth="1" height="1" width="5" position="0 -1 -2">
+        <a-sphere class="soundbox" color="#AA0000" radius="0.25" position="1.5 0.5 0" sound="src: #abba01" toggle-play>
+        </a-sphere>
+        <a-sphere class="soundbox" color="#AA0000" radius="0.25" position="0 0.5 0" sound="src: #abba02" toggle-play>
+        </a-sphere>
+        <a-sphere class="soundbox" color="#AA0000" radius="0.25" position="-1.5 0.5 0" sound="src: #abba03" toggle-play>
+        </a-sphere>
       </a-box>
     </a-entity>
 
@@ -304,21 +309,19 @@
       <a-video src="#boatVideo" width="7" height="5.25" position="0 1.4 -4.4"></a-video>
       <a-image position="0 0 -4.4" src="#boatCurtains" height="12" width="9"></a-image>
       <!-- objects -->
-      <a-entity static-body obj-model="obj: #boat-obj; mtl: #boat-mtl" position="0 -1 1" rotation="0 90 0" scale="0.4 0.4 0.4">
+      <a-entity static-body obj-model="obj: #boat-obj; mtl: #boat-mtl" position="0 -1 1" rotation="0 90 0"
+        scale="0.4 0.4 0.4">
       </a-entity>
       <!-- ceiling -->
       <a-plane position="0 6 0" rotation="90 0 0" height="9" width="9" color="black"></a-plane>
 
-      <a-link href="https://www.visitstockholm.com" title="Visit Stockholm" image="#gotoStockholm" position="3 0 -3" scale="0.4 0.4 0.4" rotation="0 0 0"></a-link>
+      <a-link href="https://www.visitstockholm.com" title="Visit Stockholm" image="#gotoStockholm" position="3 -0.4 -3"
+        scale="0.3 0.3 0.3" rotation="0 0 0"></a-link>
     </a-entity>
 
     <!-- Secret Room -->
     <a-entity position="-22.5 1.5 19.5" rotation="0 0 0">
-      <a-animation attribute="rotation"
-               to="0 360 0"
-               dur="10000"
-               fill="forwards"
-               repeat="indefinite"></a-animation>
+      <a-animation attribute="rotation" to="0 360 0" dur="10000" fill="forwards" repeat="indefinite"></a-animation>
       <a-box src="#boehm-texture" depth="2" height="3" width="3"></a-box>
     </a-entity>
 
