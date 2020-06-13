@@ -14,6 +14,7 @@
   <script src="https://cdn.glitch.com/fc59a62e-8656-457f-8170-ac57c3fc900c%2Fprogressive-controls.js?v=1589121812737"></script>
   <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
   <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
+
 </head>
 
 <body>
@@ -123,6 +124,7 @@
       <img id="boatCurtains" src="img/boat/curtains.png" />
       <a-asset-item id="boat-obj" src="img/boat/VikingBoat.obj"></a-asset-item>
       <a-asset-item id="boat-mtl" src="img/boat/VikingBoat.mtl"></a-asset-item>
+      <img id="gotoStockholm" src="img/other/gotostockholm.jpg">
 
       <!-- Secret Room -->
       <img id="boehm-texture" src="img/secret/boehm.jpg">
@@ -324,10 +326,12 @@
       <a-video src="#boatVideo" width="7" height="5.25" position="0 1.4 -4.4"></a-video>
       <a-image position="0 0 -4.4" src="#boatCurtains" height="12" width="9"></a-image>
       <!-- objects -->
-      <a-entity obj-model="obj: #boat-obj; mtl: #boat-mtl" position="0 -1 1" rotation="0 90 0" scale="0.4 0.4 0.4">
+      <a-entity static-body obj-model="obj: #boat-obj; mtl: #boat-mtl" position="0 -1 1" rotation="0 90 0" scale="0.4 0.4 0.4">
       </a-entity>
       <!-- ceiling -->
       <a-plane position="0 6 0" rotation="90 0 0" height="9" width="9" color="black"></a-plane>
+
+      <a-link href="https://www.visitstockholm.com" title="Visit Stockholm" image="#gotoStockholm" position="3 0 -3" scale="0.4 0.4 0.4" rotation="0 0 0"></a-link>
     </a-entity>
 
     <!-- Secret Room -->
