@@ -1,10 +1,5 @@
 // This wall-generator was inspiried by Shane Hudon's post
 // https://24ways.org/2016/first-steps-in-vr/
-
-// Walls generator
-// This will auto generate a map. Right now it needs to be an equal height and width
-// Numbers are used to create the map
-
 // NUMBER KEY:
 // 0 = no walls
 // 1 = normal wall
@@ -39,7 +34,6 @@ const map = {
   "height":19,
   "width":19
 }
-
 
 document.querySelector('a-scene').addEventListener('render-target-loaded', () => {
   const WALL_SIZE = 3;
