@@ -75,10 +75,8 @@
       <!-- global -->
       <img id="floor" src="img/other/floor2.jpg" />
       <img id="wall" src="img/other/wall-dark.png" />
-      <img id="wall-secret" src="img/other/wall-concrete-secret.jpg" />
+      <img id="wall-secret" src="img/other/wall-dark-secret.png" />
       <img id="wall-brick" src="img/other/brick.jpg" />
-      <img id="room-sign-1" src="img/other/room-sign-1.png" />
-      <img id="room-sign-2" src="img/other/room-sign-2.png" />
 
       <img id="room-beer-1" src="img/other/room-beer-1.png" />
       <img id="room-beer-2" src="img/other/room-beer-2.png" />
@@ -159,9 +157,7 @@
       <a-asset-item id="boat-mtl" src="img/boat/VikingBoat.mtl"></a-asset-item>
 
       <!-- Secret Room -->
-      <a-asset-item id="fox-obj" src="img/secret/elk.gltf"></a-asset-item>
-      <a-asset-item id="fox-mtl" src="img/secret/fox/materials.mtl"></a-asset-item>
-      <a-asset-item id="boehm-texture" src="img/secret/boehm.jpg"></a-asset-item>
+      <img id="boehm-texture" src="img/secret/boehm.jpg">
     </a-assets>
 
     <!-- User / Camera -->
@@ -337,11 +333,9 @@
       <a-plane position="0 6 0" rotation="90 0 0" height="9" width="9" color="black"></a-plane>
     </a-entity>
 
-    <!-- Secret Room (Second Right) -->
+    <!-- Secret Room -->
     <a-entity position="-22.5 1.5 19.5" rotation="0 0 0">
-      <a-entity obj-model="obj: #fox-obj; mtl: #fox-mtl" rotation="0 -110 0"></a-entity>
-      <a-gltf-model src="secret/elk.gltf"></a-gltf-model>
-      <a-box src="#boehm-texture" depth="2" height="4" width="0.5"></a-box>
+      <a-box static-body src="#boehm-texture" depth="2" height="3" width="3"></a-box>
     </a-entity>
 
     <!-- Ground -->
