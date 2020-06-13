@@ -5,7 +5,7 @@
 
 ### Usage
 
-To explore the full experience please visit: [WebVR Experience](https://tmaurhart.github.io/webvr/)
+To explore the full experience please visit: <a href="WebVR Expericence" target="_blank">https://tmaurhart.github.io/webvr/</a>
 
 ### Group Members
 
