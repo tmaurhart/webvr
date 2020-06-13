@@ -108,34 +108,34 @@
       <img id="hallway-ingrid" src="img/team/ingrid.png" />
       <img id="hallway-boatbeer" src="img/team/boatbeer.png" />
 
-      <!-- Example Room 1-->
+      <!-- Room 1 (Beer Room) -->
       <img id="room1-example" src="img/room1/beer.jpg" />
 
-      <!-- Example Room 2-->
-      <img id="room2-final1" src="img/room2/final-1.png" />
-      <img id="room2-final2" src="img/room2/final-2.png" />
-      <img id="room2-final3" src="img/room2/final-3.png" />
-      <img id="room2-final4" src="img/room2/final-4.png" />
-      <img id="room2-mock1" src="img/room2/mock-1.png" />
-      <img id="room2-mock2" src="img/room2/mock-2.png" />
-      <img id="room2-mock3" src="img/room2/mock-3.png" />
-      <img id="room2-mock4" src="img/room2/mock-4.png" />
-      <img id="room2-wire1" src="img/room2/wire-1.png" />
-      <img id="room2-wire2" src="img/room2/wire-2.png" />
-      <img id="room2-wire3" src="img/room2/wire-3.png" />
-      <img id="room2-wire4" src="img/room2/wire-4.png" />
-      <img id="room2-final-sign" src="img/room2/final-sign.png" />
+      <!-- Room 2 (Big City Life) -->
+      <img id="room2-stockholm1" src="img/room2/stockholm-1.png" />
+      <img id="room2-stockholm2" src="img/room2/stockholm-2.png" />
+      <img id="room2-stockholm3" src="img/room2/stockholm-3.png" />
+      <img id="room2-stockholm4" src="img/room2/stockholm-4.png" />
+      <img id="room2-stockholm5" src="img/room2/stockholm-5.png" />
+      <img id="room2-stockholm6" src="img/room2/stockholm-6.png" />
+      <img id="room2-stockholm7" src="img/room2/stockholm-7.png" />
+      <img id="room2-stockholm8" src="img/room2/stockholm-8.png" />
+      <img id="room2-stockholm9" src="img/room2/stockholm-9.png" />
+      <img id="room2-stockholm10" src="img/room2/stockholm-10.png" />
+      <img id="room2-stockholm11" src="img/room2/stockholm-11.png" />
+      <img id="room2-stockholm12" src="img/room2/stockholm-12.png" />
+      <img id="room2-room-sign-stockholm" src="img/room2/stockholm-sign.png" />
       <img id="room2-mock-sign" src="img/room2/mock-sign.png" />
       <img id="room2-wire-sign" src="img/room2/wire-sign.png" />
 
-      <!-- Example Room 3 -->
+      <!-- Room 3 (Accommodation) -->
       <img id="room3-example" src="img/room3/example.png" />
       <img id="room3-example-stat" src="img/room3/map.png" />
       <img id="room3-example-num" src="img/room3/examplenum.png" />
       <img id="room3-page-before" src="img/room3/page-before.png" />
       <img id="room3-page-after" src="img/room3/map.png" />
 
-      <!-- Example Room 4-->
+      <!-- Room 4 (ABBA) -->
       <img id="room4-map" src="img/room4/map.png" />
       <img id="room4-photo1" src="img/room4/photo1.png" />
       <img id="room4-photo2" src="img/room4/photo2.png" />
@@ -146,7 +146,7 @@
       <img id="room4-sign-photos" src="img/room4/sign-photos.png" />
       <img id="room4-sign-roadshow" src="img/room4/sign-roadshow.png" />
 
-      <!-- Example Room 5 -->
+      <!-- Room 5 (Hall of Shame) -->
       <img id="room5-sign-back" src="img/room5/sign-back.png" />
       <img id="room5-sign-side" src="img/room5/sign-side.png" />
       <img id="room5-landing" src="img/room5/landing.png" />
@@ -155,7 +155,7 @@
       <img id="room5-vr" src="img/room5/vr.png" />
       <img id="room5-wa" src="img/room5/wa.png" />
 
-      <!-- Example Vasa Boat 6-->
+      <!-- Room 6 (Vasa Boat) -->
       <video id="boatVideo" autoplay loop="true" webkit-playsinline playsinline
         src="https://cdn.glitch.com/98ee4b2b-a63e-4667-a986-2a4e271af80e%2Fvasa.mp4?v=1591978898563"></video>
       <img id="boatCurtains" src="img/boat/curtains.png" />
@@ -169,8 +169,8 @@
 
     <!-- User / Camera -->
     <a-entity id="player" camera="user-height: 2.0" universal-controls kinematic-body listener position="0 9 0">
-      <a-entity id="cursor" cursor position="0 0 -1" geometry="primitive: sphere; radius: 0.010"
-        material="color: #fff; shader: flat; opacity: 0.8">
+      <a-entity id="cursor" cursor position="0 0 -1" geometry="primitive: sphere; radius: 0.005"
+        material="color: #e91485; shader: flat; opacity: 0.5">
       </a-entity>
     </a-entity>
 
@@ -218,24 +218,25 @@
       <a-image position="-1.45 1 6.02" rotation="0 90 0" src="#room-bcl-1" height="1.5" width="3"></a-image>
       <a-image position="1.45 1 6.02" rotation="0 -90 0" src="#room-bcl-2" height="1.5" width="3"></a-image>
       <!-- Back wall -->
-      <a-image position="-2 0 -4.4" src="#room2-final1" height="2.5" width="2.5"></a-image>
-      <a-image position="-2 2.4 -4.4" src="#room2-final2" height="2.5" width="2.5"></a-image>
-      <a-image position="2 0 -4.4" src="#room2-final3" height="2.5" width="2.5"></a-image>
-      <a-image position="2 2.4 -4.4" src="#room2-final4" height="2.5" width="2.5"></a-image>
-      <a-image position="0 5.1 -4.2" rotation="15 0 0" src="#room2-final-sign" height="2.5" width="5"></a-image>
+      <a-image position="-2 0 -4.4" src="#room2-stockholm1" height="2.5" width="2.5"></a-image>
+      <a-image position="-2 2.4 -4.4" src="#room2-stockholm2" height="2.5" width="2.5"></a-image>
+      <a-image position="2 0 -4.4" src="#room2-stockholm3" height="2.5" width="2.5"></a-image>
+      <a-image position="2 2.4 -4.4" src="#room2-stockholm4" height="2.5" width="2.5"></a-image>
+      <a-image position="0 5.1 -4.2" rotation="15 0 0" src="#room2-room-sign-stockholm" height="2.5" width="5">
+      </a-image>
       <!--right wall -->
       <a-entity rotation="0 -90 0">
-        <a-image position="-2 0 -4.4" src="#room2-mock1" height="2" width="2"></a-image>
-        <a-image position="-2 2.4 -4.4" src="#room2-mock2" height="2" width="2"></a-image>
-        <a-image position="2 0 -4.4" src="#room2-mock3" height="2" width="2"></a-image>
-        <a-image position="2 2.4 -4.4" src="#room2-mock4" height="2" width="2"></a-image>
+        <a-image position="-2 0 -4.4" src="#room2-stockholm9" height="2" width="2"></a-image>
+        <a-image position="-2 2.4 -4.4" src="#room2-stockholm10" height="2" width="2"></a-image>
+        <a-image position="2 0 -4.4" src="#room2-stockholm11" height="2" width="2"></a-image>
+        <a-image position="2 2.4 -4.4" src="#room2-stockholm12" height="2" width="2"></a-image>
       </a-entity>
       <!--left wall -->
       <a-entity rotation="0 90 0">
-        <a-image position="-2 0 -4.4" src="#room2-wire1" height="2.5" width="2.5"></a-image>
-        <a-image position="-2 2.4 -4.4" src="#room2-wire2" height="2.5" width="2.5"></a-image>
-        <a-image position="2 0 -4.4" src="#room2-wire3" height="2.5" width="2.5"></a-image>
-        <a-image position="2 2.4 -4.4" src="#room2-wire4" height="2.5" width="2.5"></a-image>
+        <a-image position="-2 0 -4.4" src="#room2-stockholm5" height="2.5" width="2.5"></a-image>
+        <a-image position="-2 2.4 -4.4" src="#room2-stockholm6" height="2.5" width="2.5"></a-image>
+        <a-image position="2 0 -4.4" src="#room2-stockholm7" height="2.5" width="2.5"></a-image>
+        <a-image position="2 2.4 -4.4" src="#room2-stockholm8" height="2.5" width="2.5"></a-image>
       </a-entity>
     </a-entity>
 
