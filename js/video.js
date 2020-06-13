@@ -1,5 +1,5 @@
 // play video when user enters room. Pause when leaving
-const video = document.getElementById('theaterVideo');
+const video = document.getElementById('boatVideo');
 video.pause();
 AFRAME.registerComponent('listener', {
   tick: function () {
