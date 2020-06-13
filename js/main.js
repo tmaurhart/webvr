@@ -10,7 +10,7 @@ const video = document.getElementById("boatVideo");
 video.pause();
 // Workaround for mobile video
 // uses the splash screen button to trigger video play/pause so that the
-// video will auto play when the user enters the theater room
+// video will auto play when the user enters boat room
 const enterButton = document.querySelector('.splash__button')
 const splash = document.querySelector('.splash');
 
