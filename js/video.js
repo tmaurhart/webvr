@@ -24,6 +24,36 @@ AFRAME.registerComponent('listener', {
   }
 });
 
+const soundboxes = document.querySelectorAll(".soundbox");
+var musicPlaying = false;
+AFRAME.registerComponent("toggle-play", {
+  init: function() {
+    //var myEl = document.querySelector(".soundbox");
+    var el = this.el;
+    el.addEventListener("click", function() {
+      if (musicPlaying) {
+        soundboxes.forEach(function(e) {
+          e.components.sound.stopSound();
+          e.setAttribute("color", "#AA0000");
+          musicPlaying = false;
+        })
+      } else {
+        el.components.sound.playSound();
+        el.setAttribute("color", "#00AA00");
+        musicPlaying = true;
+      }
+    });
+  },
+});
+AFRAME.registerComponent("stop", {
+  init: function() {
+    var myEl = document.querySelector(".soundbox");
+    this.el.addEventListener("click", function() {
+      myEl.components.sound.stopSound();
+    });
+  },
+});
+
 // Workaround for mobile video
 // uses the splash screen button to trigger video play/pause so that the
 // video will auto play when the user enters the theater room
