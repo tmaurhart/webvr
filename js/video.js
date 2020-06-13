@@ -1,7 +1,7 @@
 const cursor = document.getElementById("cursor");
 cursor.setAttribute("visible", false);
 
-const video = document.getElementById('theaterVideo');
+const video = document.getElementById('boatVideo');
 video.pause();
 AFRAME.registerComponent('listener', {
   tick: function () {
