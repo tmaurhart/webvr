@@ -7,7 +7,6 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <link rel="stylesheet" href="main.css" />
   <title>WCIS</title>
-  <meta name="description" content="Now in 3D!" />
 
   <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
   <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v3.8.6/dist/aframe-extras.min.js"></script>
@@ -83,8 +82,8 @@
 
       <img id="room-beer-1" src="img/other/room-beer-1.png" />
       <img id="room-beer-2" src="img/other/room-beer-2.png" />
-      <img id="room-excursion-1" src="img/other/room-excursion-1.png" />
-      <img id="room-excursion-2" src="img/other/room-excursion-2.png" />
+      <img id="room-excursion-1" src="img/other/room-excursions-1.png" />
+      <img id="room-excursion-2" src="img/other/room-excursions-2.png" />
       <img id="room-accommodation-1" src="img/other/room-accommodation-1.png" />
       <img id="room-accommodation-2" src="img/other/room-accommodation-2.png" />
 
@@ -156,12 +155,12 @@
       <img id="room5-vr" src="img/room5/vr.png" />
       <img id="room5-wa" src="img/room5/wa.png" />
 
-      <!-- Example Theater 6-->
-      <video id="theaterVideo" autoplay loop="true" webkit-playsinline playsinline
+      <!-- Example Vasa Boat 6-->
+      <video id="boatVideo" autoplay loop="true" webkit-playsinline playsinline
         src="https://cdn.glitch.com/98ee4b2b-a63e-4667-a986-2a4e271af80e%2Fvasa.mp4?v=1591978898563"></video>
-      <img id="theater-curtains" src="img/theater/curtains.png" />
-      <a-asset-item id="boat-obj" src="img/theater/98ee4b2b-a63e-4667-a986-2a4e271af80e_Tugboat.obj"></a-asset-item>
-      <a-asset-item id="boat-mtl" src="img/theater/98ee4b2b-a63e-4667-a986-2a4e271af80e_Tugboat.mtl"></a-asset-item>
+      <img id="boatCurtains" src="img/boat/curtains.png" />
+      <a-asset-item id="boat-obj" src="img/boat/VikingBoat.obj"></a-asset-item>
+      <a-asset-item id="boat-mtl" src="img/boat/VikingBoat.mtl"></a-asset-item>
 
       <!-- Secret Room -->
       <a-asset-item id="fox-obj" src="img/secret/fox/model.obj"></a-asset-item>
@@ -193,7 +192,7 @@
     <a-image position="-2.9 3 -9" rotation="0 90 0" src="#hallway-tom" height="3" width="3"></a-image>
     <a-image position="-2.9 3 3" rotation="0 90 0" src="#hallway-ingrid" height="3" width="3"></a-image>
 
-    <!-- Exampe Room 1 (Immediate right) -->
+    <!-- Room 1 (Beer Room) -->
     <a-entity position="10.5 1.5 19.5" rotation="0 -90 0">
       <!-- Room Sign -->
       <a-image position="-1.45 1 6.02" rotation="0 90 0" src="#room-beer-1" height="1.5" width="3"></a-image>
@@ -213,7 +212,7 @@
       </a-entity>
     </a-entity>
 
-    <!-- Example Room 2 (First Left) -->
+    <!-- Room 2 (Big City Life) -->
     <a-entity position="-10.5 1.5 7.5" rotation="0 90 0">
       <!-- Room Sign -->
       <a-image position="-1.45 1 6.02" rotation="0 90 0" src="#room-bcl-1" height="1.5" width="3"></a-image>
@@ -230,7 +229,6 @@
         <a-image position="-2 2.4 -4.4" src="#room2-mock2" height="2" width="2"></a-image>
         <a-image position="2 0 -4.4" src="#room2-mock3" height="2" width="2"></a-image>
         <a-image position="2 2.4 -4.4" src="#room2-mock4" height="2" width="2"></a-image>
-        <a-image position="0 5.1 -4.2" rotation="15 0 0" src="#room2-mock-sign" height="2.5" width="5"></a-image>
       </a-entity>
       <!--left wall -->
       <a-entity rotation="0 90 0">
@@ -238,11 +236,10 @@
         <a-image position="-2 2.4 -4.4" src="#room2-wire2" height="2.5" width="2.5"></a-image>
         <a-image position="2 0 -4.4" src="#room2-wire3" height="2.5" width="2.5"></a-image>
         <a-image position="2 2.4 -4.4" src="#room2-wire4" height="2.5" width="2.5"></a-image>
-        <a-image position="0 5.1 -4.2" rotation="15 0 0" src="#room2-wire-sign" height="2.5" width="5"></a-image>
       </a-entity>
     </a-entity>
 
-    <!-- Room 3 (First Right) -->
+    <!-- Room 3 (Accommodation) -->
     <a-entity position="7.5 1.5 7.5" rotation="0 -90 0">
       <!-- Room Sign -->
       <a-image position="-1.45 1 6.02" rotation="0 90 0" src="#room-accommodation-1" height="1.5" width="3"></a-image>
@@ -260,7 +257,7 @@
       </a-entity>
     </a-entity>
 
-    <!-- Example Room 4 (Second Left) -->
+    <!-- Room 4 (ABBA) -->
     <a-entity position="-10.5 1.5 -4.5" rotation="0 90 0">
       <!-- Room Sign -->
       <a-image position="-1.45 1 6.02" rotation="0 90 0" src="#room-abba-1" height="1.5" width="3"></a-image>
@@ -307,7 +304,7 @@
       </a-cylinder> -->
     </a-entity>
 
-    <!-- Example Room 5 (Second Right) -->
+    <!-- Room 5 (Hall of Shame) -->
     <a-entity position="7.5 1.5 -4.5" rotation="0 -90 0">
       <!-- Room Sign -->
       <a-image position="-1.45 1 6.02" rotation="0 90 0" src="#room-hos-1" height="1.5" width="3"></a-image>
@@ -327,16 +324,16 @@
       </a-entity>
     </a-entity>
 
-    <!-- Example Room 6 (far back room ) -->
+    <!-- Room 6 (Vasa Boat) -->
     <a-entity position="-1.5 1.5 -22.5">
       <!-- Room Sign -->
       <a-image position="-1.45 1 6.02" rotation="0 90 0" src="#room-vasa-1" height="1.5" width="3"></a-image>
       <a-image position="1.45 1 6.02" rotation="0 -90 0" src="#room-vasa-2" height="1.5" width="3"></a-image>
       <!-- Back wall -->
-      <a-video src="#theaterVideo" width="7" height="5.25" position="0 1.4 -4.4"></a-video>
-      <a-image position="0 0 -4.4" src="#theater-curtains" height="12" width="9"></a-image>
+      <a-video src="#boatVideo" width="7" height="5.25" position="0 1.4 -4.4"></a-video>
+      <a-image position="0 0 -4.4" src="#boatCurtains" height="12" width="9"></a-image>
       <!-- objects -->
-      <a-entity obj-model="obj: #boat-obj; mtl: #boat-mtl" position="0 -1 1" rotation="0 0 0" scale="0.5 0.5 0.5">
+      <a-entity obj-model="obj: #boat-obj; mtl: #boat-mtl" position="0 -1 1" rotation="0 90 0" scale="0.4 0.4 0.4">
       </a-entity>
       <!-- ceiling -->
       <a-plane position="0 6 0" rotation="90 0 0" height="9" width="9" color="black"></a-plane>

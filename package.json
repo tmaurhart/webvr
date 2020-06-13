@@ -1,6 +1,6 @@
 {
-  "name": "tlni-vr",
-  "description": "TL&I. Now in 3D",
+  "name": "wcis-webvr",
+  "description": "Study Trip to Stockholm",
   "version": "0.3.0",
   "license": "MIT",
   "scripts": {
